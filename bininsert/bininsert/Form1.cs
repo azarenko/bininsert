@@ -51,7 +51,7 @@ namespace bininsert
                     source.Seek(sourceStartIndex, SeekOrigin.Begin);
                     source.Read(buffer, 0, length);
 
-                    source.Seek(sourceStartIndex, SeekOrigin.Begin);
+                    destination.Seek(sourceStartIndex, SeekOrigin.Begin);
                     destination.Write(buffer, 0, length);
                 }
                 MessageBox.Show("Complited", "Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
